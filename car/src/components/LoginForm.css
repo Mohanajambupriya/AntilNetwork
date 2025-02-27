@@ -1,0 +1,111 @@
+.fullform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center/cover;
+}
+
+/* Card Container */
+.card {
+  background: #d8d7d7;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Form Heading */
+#heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input Fields */
+.input-field {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Buttons */
+.btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.button1,
+.button2,
+.button3 {
+  width: 48%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Primary Login Button */
+.button1 {
+  background-color: #007bff;
+  color: white;
+}
+
+.button1:hover {
+  background-color: #0056b3;
+}
+
+/* Secondary Button */
+.button2 {
+  background-color: #28a745;
+  color: white;
+}
+
+.button2:hover {
+  background-color: #1e7e34;
+}
+.sig{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-left: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+/* Google Sign-In Button */
+.button3 {
+  width: 100%;
+  margin-top: 15px;
+  background-color: #db4437;
+  color: white;
+}
+
+.button3:hover {
+  background-color: #c1351d;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .card {
+    width: 90%;
+    padding: 20px;
+  }
+}

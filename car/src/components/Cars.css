@@ -1,0 +1,100 @@
+/* Cars.css */
+
+.cars-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-top: 1px;
+    margin-bottom: 50px;
+    color: #333;
+  }
+  
+  .cars-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .car-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .car-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .car-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* ✅ Centers the image inside */
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .car-image {
+    width: 100px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block; /* ✅ Ensures proper alignment */
+    margin: 0 ; /* ✅ Centers the image horizontally */
+  }
+  
+  
+  h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #222;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px 40px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  button:first-child {
+    background: #98a2a9;
+    color: #fff;
+  }
+  
+  button:first-child:hover {
+    background: #6f888f;
+  }
+  
+  .book-button {
+    background: #ed5fd5;
+    color: #fff;
+  }
+  
+  .book-button:hover {
+    background: #ff73d5;
+  }
+  

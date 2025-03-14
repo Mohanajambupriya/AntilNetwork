@@ -12,18 +12,19 @@ import AdminLogin from "./components/AdminLogin";
 function App() {
   return (
     <Router>
-      <Header /> 
-      
-      <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path="/home" element={<LoginForm />} />
-        <Route path="/signup" element={<SignupForm />} />
-        <Route path="/login" element={<LoginForm />} />
-        <Route path="/cars" element={<Cars />} />
-        <Route path="/booking/:carId" element={<Booking />} />
-        <Route path="/admin" element={<AdminLogin />} />
-        <Route path="/admindash" element={<AdminDashboard/>}/>
+  <Header /> 
+
+  <Routes>
+    <Route path="/" element={<Home />} />  {/* Default route */}
+    <Route path="/home" element={<Home />} />
+    <Route path="/signup" element={<SignupForm />} />
+    <Route path="/login" element={<LoginForm />} />
+    <Route path="/cars" element={<Cars />} />
+    <Route path="/booking/:carId" element={<Booking />} />
+    <Route path="/admin" element={<AdminLogin />} />
+    <Route path="/admindash" element={<AdminDashboard />} />
   
+
 
         {/* ✅ Protected Admin Dashboard */}
         <Route 

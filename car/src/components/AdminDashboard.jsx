@@ -55,7 +55,7 @@ const AdminDashboard = () => {
       {/* Car Management Section */}
       <div className="admin-section">
         <h3>Car Management</h3>
-        <button className="admin-btn add-car" onClick={addCar}>➕ Add Car</button>
+        <button className="admin-btn_add-car" onClick={addCar}>➕ Add Car</button>
         <table className="admin-table">
           <thead>
             <tr>
@@ -125,4 +125,4 @@ const AdminDashboard = () => {
   );
 };
 
-export default AdminDashboard;
+export default AdminDashboard; 

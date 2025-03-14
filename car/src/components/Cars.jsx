@@ -1,4 +1,4 @@
-import React, { useState } from "react"; // ✅ Add `useState`
+import React, { useState } from "react"; // ✅ Add useState
 import { useNavigate } from "react-router-dom";
 import "./Cars.css";
 
@@ -38,7 +38,7 @@ const carData = [
 
 const Cars = () => {
   const navigate = useNavigate();
-  const [favorites, setFavorites] = useState([]); // ✅ Now `useState` works
+  const [favorites, setFavorites] = useState([]);
 
   const toggleFavorite = (id) => {
     setFavorites((prev) =>
@@ -47,23 +47,25 @@ const Cars = () => {
   };
 
   return (
-    <div className="cars-container">
-      <h2>Available Cars</h2>
-      <div className="cars-list">
-        {carData.map((car) => (
-          <div key={car.id} className="car-card">
-            <img src={car.image} alt={car.name} className="car-image" />
-            <h3>{car.name}</h3>
-            <p>Price: ${car.price}</p>
-            <p>Fuel: {car.fuel}</p>
-            <div className="buttons">
-              <button onClick={() => toggleFavorite(car.id)}>
-                {favorites.includes(car.id) ? "❤️ Favorite" : "🤍 Add to Fav"}
-              </button>
-              <button className="book-button" onClick={() => navigate(`/booking/${car.id}`)}>Book Now</button>
-            </div>
-          </div>
-        ))}
+    <div className="carpage">
+      <div className="cars-container">
+        <h2>Available Cars</h2>
+        <div className="cars-list">
+          {carData.map((car) => (
+            <div key={car.id} className="car-card">
+              <img src={car.image} alt={car.name} className="car-image" />
+              <h3>{car.name}</h3>
+              <p>Price: ${car.price}</p>
+              <p>Fuel: {car.fuel}</p>
+              <div className="bot">
+                <button onClick={() => toggleFavorite(car.id)}>
+                  {favorites.includes(car.id) ? "❤️ Favorite" : "🤍 Add to Fav"}
+                </button>
+                <button className="book-bot" onClick={() => navigate(`/booking/${car.id}`)}>Book Now</button>
+              </div>
+            </div> 
+          ))} 
+        </div>
       </div>
     </div>
   );

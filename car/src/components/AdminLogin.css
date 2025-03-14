@@ -11,14 +11,16 @@
   /* Login Container */
   .admin-login-container {
     margin-top: 0px;
-    background: #e3e3e3;
-    
+    background: rgba(255, 255, 255, 0.2);
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     text-align: center;
     width: 350px;
-  }
+   backdrop-filter: blur(16px); /* Glass effect */
+    border: 1px solid rgba(0, 0, 0, 0.3); /* Soft border */
+}
+
   
   /* Title */
   .admin-title {
@@ -47,40 +49,40 @@
   .admin-label {
     font-size: 1.3rem;
     font-weight: 500;
-    color: #34495e;
+    color: #ffffff;
     text-align: left;
   }
   
   /* Input Fields */
   .admin-input {
-    width: 100%;
     padding: 10px;
     font-size: 1rem;
-    border: 2px solid #bdc3c7;
-    border-radius: 6px;
+    border: 2px solid #000000;
+    border-radius: 10px;
     outline: none;
     transition: border 0.3s;
   }
   
   .admin-input:focus {
-    border-color: #2980b9;
+    border-color: #262626;
   }
   
   /* Submit Button */
   .admin-btn {
-    background: #300dfc;
+    background: transparent;
     color: white;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: bold;
     padding: 12px;
     border: none;
-    border-radius: 6px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background 0.3s ease-in-out;
   }
   
   .admin-btn:hover {
-    background: #1f618d;
+    background: transparent;
+    color:azure
   }
   
   /* Responsive Design */

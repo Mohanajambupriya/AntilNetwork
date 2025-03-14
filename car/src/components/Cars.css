@@ -1,4 +1,10 @@
-/* Cars.css */
+.carpage {
+  background: url('https://images.pexels.com/photos/1583575/pexels-photo-1583575.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center/cover;
+  min-height: 109vh;
+  font-family: Arial, sans-serif;
+  
+}
+
 
 .cars-container {
     max-width: 1200px;
@@ -6,16 +12,19 @@
     padding: 80px;
     margin: 20px;
     text-align: center;
+    margin-left: 70px;
+    
   }
   
   h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-top: 1px;
     margin-bottom: 50px;
-    color: #333;
+    color: #fffbfb;
   }
   
   .cars-list {
+    
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
@@ -65,36 +74,47 @@
     color: #666;
   }
   
-  .buttons {
+  .bot {
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
     margin-top: 10px;
+    
   }
   
-  button {
+  .bot button {
     padding: 8px 12px;
     border: none;
-    border-radius: 20px 40px;
+    border-radius: 20px;
     cursor: pointer;
-    font-size: 1rem;
-    transition: background 0.3s ease-in-out;
+    font-size: 13px;
+    transition: 0.3s ease-in-out;
+    border: 2px solid #000000;
+
   }
   
-  button:first-child {
-    background: #98a2a9;
-    color: #fff;
+  .bot button:first-child {
+    border: 2px solid #000000;
+    color: rgb(255, 254, 254);
+    background-color: #007bff;
+    
   }
   
-  button:first-child:hover {
-    background: #6f888f;
+  .bot button:first-child:hover {
+    background-color: #0056b3;
+    border: 2px solid #000000;
+    color: rgb(255, 255, 255);
   }
   
-  .book-button {
-    background: #ed5fd5;
-    color: #fff;
+  .book-bot {
+    border: 2px solid #000000;
+    background-color: #007bff;
+    color: white;
   }
   
-  .book-button:hover {
-    background: #ff73d5;
+  .book-bot:hover {
+    border: 2px solid #000000;
+    background-color: #0056b3;
   }
   

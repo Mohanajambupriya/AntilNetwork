@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./SignupForm.css";
 import { useNavigate, Link } from "react-router-dom";
 import { auth, googleProvider, db } from "/src/firebaseConfig";
 import { createUserWithEmailAndPassword, signInWithPopup } from "firebase/auth";

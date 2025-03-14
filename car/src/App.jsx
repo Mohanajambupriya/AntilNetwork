@@ -12,10 +12,11 @@ import AdminLogin from "./components/AdminLogin";
 function App() {
   return (
     <Router>
-      <Header /> {/* ✅ Global Header */}
+      <Header /> 
+      
       <Routes>
-      <Route path="/" element={<LoginForm />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/home" element={<LoginForm />} />
         <Route path="/signup" element={<SignupForm />} />
         <Route path="/login" element={<LoginForm />} />
         <Route path="/cars" element={<Cars />} />

@@ -49,7 +49,7 @@ const Home = () => {
 
       {/* Main Content */}
       <main className="content">
-        <h1 className='brand'> Brand</h1>
+        <h1 className='brand'> Brands</h1>
         <Link to="">
           <button className='Applian'>
             <img src='https://vandimandi.com/uploads/brands/audi.png' />
